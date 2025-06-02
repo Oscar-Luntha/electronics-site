@@ -1,41 +1,26 @@
-import { Phone , Mail, MapPin } from "lucide-react"
+import Contact from "./ui/sections/contact"
+import About from "./ui/sections/about"
+import Services from "./ui/sections/services"
+import FeaturedProducts from "./ui/sections/featuredProducts"
 export default function Home(){
   return (
-    <>
-      <section>
-        <h1>Professional Electronics Services</h1>
-        <p>Expert installation, reliable delivery and convenient collection services for all your electronic needs</p>
-        <button>Book a service</button>
+    <div className="min-h-screen bg-background">
+     <section className="w-full min-h-[50vh] bg-gray-100 px-6 py-12 text-center">
+     <h1 className="text-4xl md:text-7xl font-bold mb-4">Professional Electronics Services</h1>
+      <p className="text-base lg:text-xl text-gray-700 mb-6">
+        Expert installation, reliable delivery and convenient collection services for all your electronic needs
+      </p>
+        <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+        Book a service
+        </button>
       </section>
-      <section>
-        <h1>Our Services</h1>
-      </section>
-      <section>
-        <h1>About TnE-Electronics</h1>
-        <p>With over 10 years of experience in the electronivs industry, we provide reliable and professional services to both residential and commercial clients.
-          Our certified technicians ensure quality workmanship and customer satisfaction
-        </p>
-        <div>
-          <div>500+ Happy Customers</div>
-          <div>10+ Years Experience</div>
-          <div>12 hrs Support available</div>
-        </div>
-      </section>
-      <section>
-      <h1>Contact Us</h1>
-        <div className="flex items-center gap-2">
-          <Phone className="w-5 h-5 text-blue-600"/>
-          <span>Phone : 099-------</span>
-        </div>
-        <div>
-          <Mail className="w-5 h-5 text-blue-600"/>
-          <span>Tnelectronis@gmail.com</span>
-        </div>
-        <div>
-          <MapPin className="w-5 h-5 text-blue-600"/>
-          <span>Address: ------ </span>
-        </div>
-      </section>
-    </>
+      <FeaturedProducts/>
+      <Services/>
+      <About/>
+      <Contact/>
+      <footer className="px-6 py-6 text-center bg-black text-white">
+        <p>&copy; {new Date().getFullYear()} TnE-Electronics. All rights reserved.</p>
+      </footer>
+    </div>
   )
 }
