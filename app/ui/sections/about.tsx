@@ -1,6 +1,6 @@
 export default function About(){
     return(
-        <section className="px-6 py-12 text-center shadow-sm bg-white">
+        <section id="about" className="px-6 py-12 text-center scroll-mt-64 md:scroll-mt-20 shadow-sm bg-white">
         <h1 className="text-4xl font-bold mb-6 text-gray-900">About TnE-Electronics</h1>
         <p className="text-base md:text-xl text-gray-700 max-w-3xl mx-auto mb-10">
           With over 10 years of experience in the electronics industry, we provide reliable and professional services to both residential and commercial clients.

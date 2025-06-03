@@ -1,7 +1,7 @@
 import { MapPin,Phone,Mail } from "lucide-react"
 export default function Contact(){
     return (
-        <section className="px-6 py-12 bg-white text-center">
+        <section id="contact" className="px-6 py-12 scroll-mt-64 md:scroll-mt-20 bg-white text-center">
             <h1 className="text-4xl font-bold mb-10 text-gray-900">Contact Us</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <div className="rounded-lg bg-gray-50 p-6 shadow-sm hover:shadow-md transition">
