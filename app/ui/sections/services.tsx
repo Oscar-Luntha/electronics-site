@@ -1,7 +1,7 @@
 import { Wrench, Boxes, Truck } from "lucide-react"
 export default function Services(){
     return(
-        <section className="px-6 py-12 text-center bg-white">
+        <section id="services"className="px-6 py-12 text-center bg-white scroll-mt-64 md:scroll-mt-20">
             <h1 className="text-4xl md:text-5xl font-bold mb-10 text-gray-900">Our Services</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
