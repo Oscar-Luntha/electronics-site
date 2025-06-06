@@ -8,7 +8,7 @@ export default function Header(){
         setOpenMenu(!openMenu)
     }
     return(
-        <header className="flex flex-col md:flex-row w-full p-6 gap-10 justify-between sticky top-0 z-50 bg-white shadow mb-20">
+        <header className="flex flex-col md:flex-row w-full p-6 px-6 md:p-6 gap-10 justify-between sticky top-0 z-50 bg-white shadow  md:mb-20 ">
            <div className="flex justify-between">
                 <div className="flex items-center gap-2 text-2xl font-semibold text-gray-800">
                     <Cable className="w-8 h-8 p-1 bg-blue-700 text-white rounded-sm" />
